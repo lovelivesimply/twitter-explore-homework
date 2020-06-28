@@ -1,30 +1,7 @@
-@mixin special-button($color, $bg-color) {
-  color: $color;
-  background-color: $bg-color;
-  &:hover {
-    cursor: pointer;
-    background-color: $color;
-    color: $bg-color;
-  }
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  border-bottom: solid 1px $border-color;
-  .bt {
-    padding: 5px 30px;
-    border-radius: 30px;
-    border: $primary-color solid 1px;
-  }
-
-  .bt-login {
-    @include special-button($primary-color, $white);
-  }
-
-  .bt-register {
-    @include special-button($white, $primary-color);
-  }
+  border-bottom: $border-base;
 }

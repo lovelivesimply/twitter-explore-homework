@@ -1,0 +1,37 @@
+.content {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+
+  .submit {
+    border: $border-base;
+    border-radius: 6px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+
+    > * {
+      width: 20vw;
+      margin: 16px 16px;
+    }
+    h2 {
+      color: $white;
+    }
+
+    input {
+      color: $gray;
+      background-color: $body-bg;
+      font-size: $font-size-base;
+      border: none;
+      border-bottom: $border-base;
+      padding: 20px 20px;
+
+      &:focus {
+        border-bottom: $border-base;
+        outline: none;
+      }
+    }
+  }
+}

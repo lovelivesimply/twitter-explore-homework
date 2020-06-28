@@ -2,3 +2,13 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin special-button($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  &:hover {
+    cursor: pointer;
+    background-color: $color;
+    color: $bg-color;
+  }
+}

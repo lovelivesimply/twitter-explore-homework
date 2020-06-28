@@ -1,0 +1,13 @@
+.bt {
+  padding: 5px 30px;
+  border-radius: 30px;
+  border: $primary-color solid 1px;
+}
+
+.bt-login {
+  @include special-button($primary-color, $white);
+}
+
+.bt-register {
+  @include special-button($white, $primary-color);
+}
